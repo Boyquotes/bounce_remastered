@@ -6,10 +6,22 @@
 extents = Vector2( 29.2416, 64.9784 )
 
 [node name="candle" type="Area2D"]
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 1 )
-
-[node name="Sprite" type="Sprite" parent="."]
+[node name="spr_candle" type="Sprite" parent="."]
 texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="collision_hit" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
 
