@@ -13,7 +13,7 @@ tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 
 
 [node name="candle" type="Node2D" parent="."]
 
-[node name="candle" parent="candle" instance=ExtResource( 2 )]
+[node name="candle1" parent="candle" instance=ExtResource( 2 )]
 position = Vector2( 2270.46, 845.434 )
 
 [node name="candle2" parent="candle" instance=ExtResource( 2 )]
