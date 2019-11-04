@@ -11,12 +11,12 @@ func _kill_char(body):
 
 func _inflate_char(body):
 	if body.get_name() == "char" and global.inflated == false:
-		get_node("char").scale(Vector2(1.5, 1.5))
+		get_tree().get_root().get_node("char").scale(Vector2(1.5, 1.5))
 		global.inflated = true
 
 func _deflate_char(body):
 	if body.get_name() == "char" and global.inflated == true:
-		get_node("char").scale(Vector2(1, 1))
+		get_tree().get_root().get_node("char").scale(Vector2(1, 1))
 		global.inflated = false
 
 func _win(body):
