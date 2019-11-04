@@ -22,7 +22,4 @@ func _deflate_char(body):
 func _win(body):
 	if body.get_name() == "char":
 		if body.get_parent().get_name() == "map_classic_lv1":
-			get_tree().change_scene(str("res://Scenes/Maps/map_classic_lv2.tscn"))
-			
-		elif body.get_parent().get_name() == "map_classic_lv2":
 			get_tree().change_scene(str("res://Scenes/Generic/game_won.tscn"))

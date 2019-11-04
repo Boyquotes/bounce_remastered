@@ -22,3 +22,7 @@ func _physics_process(delta):
     velocity.y += delta * GRAVITY
     get_input()
     velocity = move_and_slide(velocity, UP)
+
+    var collision = move_and_collide(velocity * delta)
+    if collision:
+        velocity = velocity.bounce(collision.normal)
