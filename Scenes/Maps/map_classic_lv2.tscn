@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Scenes/Interactable/finish.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Tilesets/tileset_wall_classic.tres" type="TileSet" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Scenes/Interactable/candle.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/Interactable/inflator.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/Interactable/deflator.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Generic/hud.tscn" type="PackedScene" id=7]
 
 [node name="map_classic_lv2" type="Node2D"]
 __meta__ = {
@@ -83,4 +84,8 @@ position = Vector2( 13975, 2791.99 )
 
 [node name="deflator9" parent="deflator" instance=ExtResource( 6 )]
 position = Vector2( 14105, 2791.99 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="GUI" parent="CanvasLayer" instance=ExtResource( 7 )]
 
