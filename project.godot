@@ -16,7 +16,12 @@ _global_script_class_icons={
 [application]
 
 config/name="Bounce Remastered"
+run/main_scene="res://Scenes/main_menu.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+global="*res://Scripts/global.gd"
 
 [rendering]
 

@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/Fonts/CCWildWordsRoman_Size120.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Assets/Fonts/CCWildWordsRoman_Size60.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Scripts/menu_button.gd" type="Script" id=3]
+
+[node name="ColorRect" type="ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.54902, 0.227451, 0.227451, 1 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+margin_left = 152.0
+margin_right = 872.0
+margin_bottom = 600.0
+alignment = 1
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer"]
+margin_top = 220.0
+margin_right = 720.0
+margin_bottom = 323.0
+custom_fonts/font = ExtResource( 1 )
+text = "Game Over"
+align = 1
+valign = 1
+
+[node name="LinkButton" type="LinkButton" parent="HBoxContainer/VBoxContainer"]
+margin_top = 327.0
+margin_right = 720.0
+margin_bottom = 379.0
+custom_fonts/font = ExtResource( 2 )
+text = "Main Menu"
+script = ExtResource( 3 )
+
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/LinkButton" to="HBoxContainer/VBoxContainer/LinkButton" method="_on_Game_Over_Main_Menu_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/LinkButton" to="HBoxContainer/VBoxContainer/LinkButton" method="_option_return_to_main_menu"]
