@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scenes/Interactable/finish.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Tilesets/tileset_wall_classic.tres" type="TileSet" id=2]
-[ext_resource path="res://Scenes/Interactable/candle.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Scenes/Interactable/inflator.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Scenes/Interactable/deflator.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/char.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Interactable/candle.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Interactable/inflator.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Interactable/deflator.tscn" type="PackedScene" id=6]
 
 [node name="map_classic_lv2" type="Node2D"]
 __meta__ = {
@@ -27,6 +28,9 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="char" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1364.5, 2013.07 )
+
 [node name="candle" type="Node2D" parent="."]
 editor/display_folded = true
 __meta__ = {
@@ -34,16 +38,16 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="candle1" parent="candle" instance=ExtResource( 3 )]
+[node name="candle1" parent="candle" instance=ExtResource( 4 )]
 position = Vector2( 1749.29, 2661.98 )
 
-[node name="candle2" parent="candle" instance=ExtResource( 3 )]
+[node name="candle2" parent="candle" instance=ExtResource( 4 )]
 position = Vector2( 16830, 2661.98 )
 
-[node name="candle3" parent="candle" instance=ExtResource( 3 )]
+[node name="candle3" parent="candle" instance=ExtResource( 4 )]
 position = Vector2( 15789.9, 1752.28 )
 
-[node name="inflator" parent="." instance=ExtResource( 4 )]
+[node name="inflator" parent="." instance=ExtResource( 5 )]
 position = Vector2( 4225.16, 2531.5 )
 
 [node name="deflator" type="Node2D" parent="."]
@@ -53,30 +57,30 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="deflator1" parent="deflator" instance=ExtResource( 5 )]
+[node name="deflator1" parent="deflator" instance=ExtResource( 6 )]
 position = Vector2( 13065, 2791.99 )
 
-[node name="deflator2" parent="deflator" instance=ExtResource( 5 )]
+[node name="deflator2" parent="deflator" instance=ExtResource( 6 )]
 position = Vector2( 13195, 2791.99 )
 
-[node name="deflator3" parent="deflator" instance=ExtResource( 5 )]
+[node name="deflator3" parent="deflator" instance=ExtResource( 6 )]
 position = Vector2( 13325, 2791.99 )
 
-[node name="deflator4" parent="deflator" instance=ExtResource( 5 )]
+[node name="deflator4" parent="deflator" instance=ExtResource( 6 )]
 position = Vector2( 13455, 2791.99 )
 
-[node name="deflator5" parent="deflator" instance=ExtResource( 5 )]
+[node name="deflator5" parent="deflator" instance=ExtResource( 6 )]
 position = Vector2( 13585, 2791.99 )
 
-[node name="deflator6" parent="deflator" instance=ExtResource( 5 )]
+[node name="deflator6" parent="deflator" instance=ExtResource( 6 )]
 position = Vector2( 13715, 2791.99 )
 
-[node name="deflator7" parent="deflator" instance=ExtResource( 5 )]
+[node name="deflator7" parent="deflator" instance=ExtResource( 6 )]
 position = Vector2( 13845, 2791.99 )
 
-[node name="deflator8" parent="deflator" instance=ExtResource( 5 )]
+[node name="deflator8" parent="deflator" instance=ExtResource( 6 )]
 position = Vector2( 13975, 2791.99 )
 
-[node name="deflator9" parent="deflator" instance=ExtResource( 5 )]
+[node name="deflator9" parent="deflator" instance=ExtResource( 6 )]
 position = Vector2( 14105, 2791.99 )
 

@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scenes/Interactable/finish.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Tilesets/tileset_wall_classic.tres" type="TileSet" id=2]
-[ext_resource path="res://Scenes/Interactable/candle.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/char.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Interactable/candle.tscn" type="PackedScene" id=4]
 
 [node name="map_classic_lv1" type="Node2D"]
 
@@ -19,37 +20,41 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="char" parent="." instance=ExtResource( 3 )]
+position = Vector2( 326.052, 196.009 )
+
 [node name="candle" type="Node2D" parent="."]
+editor/display_folded = true
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
 }
 
-[node name="candle1" parent="candle" instance=ExtResource( 3 )]
+[node name="candle1" parent="candle" instance=ExtResource( 4 )]
 position = Vector2( 2270.46, 845.434 )
 
-[node name="candle2" parent="candle" instance=ExtResource( 3 )]
+[node name="candle2" parent="candle" instance=ExtResource( 4 )]
 position = Vector2( 3960, 845.434 )
 
-[node name="candle3" parent="candle" instance=ExtResource( 3 )]
+[node name="candle3" parent="candle" instance=ExtResource( 4 )]
 position = Vector2( 4740, 845.434 )
 
-[node name="candle4" parent="candle" instance=ExtResource( 3 )]
+[node name="candle4" parent="candle" instance=ExtResource( 4 )]
 position = Vector2( 6820, 845.434 )
 
-[node name="candle5" parent="candle" instance=ExtResource( 3 )]
+[node name="candle5" parent="candle" instance=ExtResource( 4 )]
 position = Vector2( 7210, 845.434 )
 
-[node name="candle6" parent="candle" instance=ExtResource( 3 )]
+[node name="candle6" parent="candle" instance=ExtResource( 4 )]
 position = Vector2( 7730, 845.434 )
 
-[node name="candle7" parent="candle" instance=ExtResource( 3 )]
+[node name="candle7" parent="candle" instance=ExtResource( 4 )]
 position = Vector2( 8120, 845.434 )
 
-[node name="candle8" parent="candle" instance=ExtResource( 3 )]
+[node name="candle8" parent="candle" instance=ExtResource( 4 )]
 position = Vector2( 11760, 715.145 )
 
-[node name="candle9" parent="candle" instance=ExtResource( 3 )]
+[node name="candle9" parent="candle" instance=ExtResource( 4 )]
 position = Vector2( 13190, 715.145 )
 rotation = 0.000113739
 
