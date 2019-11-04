@@ -7,5 +7,5 @@ func _option_quit():
 	get_tree().quit()
 
 func _option_return_to_main_menu():
-	get_tree().change_scene(str("res://Scenes/Generic/main_menu.tscn"))
+	get_tree().change_scene(str("res://Scenes/main_menu.tscn"))
 	global.lives = 3

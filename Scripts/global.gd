@@ -1,4 +1,4 @@
 extends Node
 
 var lives = 3
-var inflated = false
+var inflated = true

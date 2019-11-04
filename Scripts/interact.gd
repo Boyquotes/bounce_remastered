@@ -5,18 +5,18 @@ func _kill_char(body):
 		global.lives-=1
 		
 		if (global.lives <= 0):
-			get_tree().change_scene(str("res://Scenes/game_over.tscn"))
+			get_tree().change_scene(str("res://Scenes/Generic/game_over.tscn"))
 		else:
 			get_tree().change_scene(str("res://Scenes/Maps/" + body.get_parent().get_name() + ".tscn"))
 
 func _inflate_char(body):
-	if body.get_name() == "char" and global.inflated is false:
-		sprite.scale(Vector2(1.5, 1.5))
+	if body.get_name() == "char" and global.inflated == false:
+		get_node("char").scale(Vector2(1.5, 1.5))
 		global.inflated = true
 
 func _deflate_char(body):
-	if body.get_name() == "char" and global.inflated is true:
-		sprite.scale(Vector2(1, 1))
+	if body.get_name() == "char" and global.inflated == true:
+		get_node("char").scale(Vector2(1, 1))
 		global.inflated = false
 
 func _win(body):
@@ -25,4 +25,4 @@ func _win(body):
 			get_tree().change_scene(str("res://Scenes/Maps/map_classic_lv2.tscn"))
 			
 		elif body.get_parent().get_name() == "map_classic_lv2":
-			get_tree().change_scene(str("res://Scenes/game_won.tscn"))
+			get_tree().change_scene(str("res://Scenes/Generic/game_won.tscn"))
