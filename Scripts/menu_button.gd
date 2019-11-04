@@ -9,3 +9,4 @@ func _option_quit():
 func _option_return_to_main_menu():
 	get_tree().change_scene(str("res://Scenes/main_menu.tscn"))
 	global.lives = 3
+	global.inflated = false
